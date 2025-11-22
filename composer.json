@@ -1,0 +1,25 @@
+{
+    "name": "zegaclabs/module-dev-accelerator",
+    "description": "A Magento 2 module providing development utilities for faster workflow",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Josip Oužecky",
+            "email": "josip.ouzecky@inchoo.net"
+        }
+    ],
+    "require": {
+        "php": "~8.2.0||~8.3.0||~8.4.0",
+        "magento/framework": "103.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ZegacLabs\\DevAccelerator\\": ""
+        }
+    }
+}

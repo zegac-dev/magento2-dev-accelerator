@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\Template">
+        <plugin name="devaccelerator_template_debugger" type="ZegacLabs\DevAccelerator\Plugin\TemplateDebuggerPlugin" sortOrder="1" />
+    </type>
+
+    <type name="Magento\Framework\View\Layout">
+        <plugin name="devaccelerator_container_debugger" type="ZegacLabs\DevAccelerator\Plugin\ContainerDebuggerPlugin" sortOrder="1" />
+    </type>
+</config>

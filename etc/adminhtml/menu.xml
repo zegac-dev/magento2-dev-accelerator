@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="ZegacLabs_DevAccelerator::zegaclabs" title="ZegacLabs" module="ZegacLabs_DevAccelerator"
+             sortOrder="999" resource="ZegacLabs_DevAccelerator::menu" />
+
+        <add id="ZegacLabs_DevAccelerator::dev_accelerator" title="Dev Accelerator" module="ZegacLabs_DevAccelerator"
+             parent="ZegacLabs_DevAccelerator::zegaclabs"
+             action="admin/system_config/edit/section/devaccelerator/group/general" sortOrder="10"
+             resource="ZegacLabs_DevAccelerator::config" />
+    </menu>
+</config>
