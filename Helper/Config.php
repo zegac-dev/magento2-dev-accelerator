@@ -60,4 +60,20 @@ readonly class Config
             ScopeInterface::SCOPE_STORE
         );
     }
+
+    /**
+     * Check if the layout handles logger feature is enabled
+     * @return bool
+     */
+    public function isLayoutHandlesLoggerEnabled(): bool
+    {
+        if (!$this->isModuleEnabled()) {
+            return false;
+        }
+
+        return (bool) $this->scopeConfig->getValue(
+            'devaccelerator/general/layout_handles_log',
+            ScopeInterface::SCOPE_STORE
+        );
+    }
 }

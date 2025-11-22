@@ -6,5 +6,6 @@
 
     <type name="Magento\Framework\View\Layout">
         <plugin name="devaccelerator_container_debugger" type="ZegacLabs\DevAccelerator\Plugin\ContainerDebuggerPlugin" sortOrder="1" />
+        <plugin name="devaccelerator_layout_handles_logger" type="ZegacLabs\DevAccelerator\Plugin\LayoutHandlesLoggerPlugin" sortOrder="2" />
     </type>
 </config>

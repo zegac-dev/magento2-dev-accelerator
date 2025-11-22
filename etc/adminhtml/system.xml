@@ -37,6 +37,15 @@
                         <field id="module_enabled">1</field>
                     </depends>
                 </field>
+
+                <field id="layout_handles_log" translate="label comment" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Layout Handles Logger</label>
+                    <comment>Log all page layout handles to browser console</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="module_enabled">1</field>
+                    </depends>
+                </field>
             </group>
         </section>
     </system>
