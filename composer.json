@@ -1,6 +1,6 @@
 {
     "name": "zegaclabs/module-dev-accelerator",
-    "description": "A Magento 2 module providing development utilities for faster workflow",
+    "description": "A Magento 2 module offering a collection of development tools and utilities designed to improve productivity, simplify debugging, and speed up the development workflow.",
     "type": "magento2-module",
     "version": "1.0.0",
     "license": "OSL-3.0",

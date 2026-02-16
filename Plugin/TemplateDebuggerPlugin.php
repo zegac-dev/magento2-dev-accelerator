@@ -25,12 +25,12 @@ class TemplateDebuggerPlugin
      * comments that display the template file path.
      *
      * @param Template $subject
-     * @param string $result
-     * @return string
+     * @param mixed $result
+     * @return mixed
      */
-    public function afterToHtml(Template $subject, string $result): string
+    public function afterToHtml(Template $subject, mixed $result): mixed
     {
-        if (!$this->isEnabled()) {
+        if (!$this->isEnabled() || !is_string($result)) {
             return $result;
         }
 

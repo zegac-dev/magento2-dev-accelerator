@@ -1,6 +1,7 @@
 # ZegacLabs Dev Accelerator
 
-A lightweight Magento 2 module providing real-time debugging utilities for templates, layout containers, and page layout handles.
+A Magento 2 module offering a collection of development tools and utilities designed to improve productivity, simplify debugging, and speed up the development workflow.
+
 
 ## Features
 
@@ -43,14 +44,3 @@ php bin/magento cache:clean
 1. Enable feature in admin config
 2. Open browser Developer Tools (F12)
 3. Check Console tab for "Page Layout Handles" section
-
-## Requirements
-
-- **Magento:** 2.4.8+
-- **PHP:** 8.2, 8.3, 8.4
-- **Mode:** Developer mode only (safe on production)
-
-## Links
-
-- [CHANGELOG.md](./CHANGELOG.md) - Version history
-- [LICENSE](./LICENSE) - OSL-3.0 license

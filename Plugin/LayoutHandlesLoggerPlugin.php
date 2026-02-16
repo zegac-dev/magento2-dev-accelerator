@@ -16,9 +16,9 @@ class LayoutHandlesLoggerPlugin
     ) {
     }
 
-    public function afterGetOutput(Layout $subject, $result): string
+    public function afterGetOutput(Layout $subject, mixed $result): mixed
     {
-        if (!$this->isEnabled()) {
+        if (!$this->isEnabled() || !is_string($result)) {
             return $result;
         }
 

@@ -22,16 +22,16 @@ class ContainerDebuggerPlugin
      * container name.
      *
      * @param Layout $subject
-     * @param string $result
+     * @param mixed $result
      * @param string $name
-     * @return string
+     * @return mixed
      */
     public function afterRenderElement(
         Layout $subject,
-        string $result,
+        mixed $result,
         string $name
-    ): string {
-        if (!$this->isEnabled()) {
+    ): mixed {
+        if (!$this->isEnabled() || !is_string($result)) {
             return $result;
         }
 
